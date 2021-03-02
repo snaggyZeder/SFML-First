@@ -1,4 +1,13 @@
 ﻿  Hero.cpp
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(23,31): warning C4244:  +=: преобразование "double" в "float", возможна потеря данных
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(26,23): warning C4244:  аргумент: преобразование "double" в "float", возможна потеря данных
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(33,31): warning C4244:  +=: преобразование "double" в "float", возможна потеря данных
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(36,22): warning C4244:  аргумент: преобразование "double" в "float", возможна потеря данных
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(44,31): warning C4244:  +=: преобразование "double" в "float", возможна потеря данных
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(47,26): warning C4244:  аргумент: преобразование "double" в "float", возможна потеря данных
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(55,31): warning C4244:  +=: преобразование "double" в "float", возможна потеря данных
   main.cpp
+D:\sfml test\SFMLtest1\SFMLtest1\Hero.cpp(58,25): warning C4244:  аргумент: преобразование "double" в "float", возможна потеря данных
   Создание кода...
+D:\sfml test\SFMLtest1\SFMLtest1\main.cpp(10,13): warning C4244:  инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
   SFMLtest1.vcxproj -> D:\sfml test\SFMLtest1\Debug\SFMLtest1.exe
