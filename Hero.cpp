@@ -18,7 +18,7 @@ Hero::Hero() {
 Sprite& Hero::getSprite() { return herosprite; }
 
 
-void Hero::moveLeft(float ftime, float currentFrame) {
+void Hero::moveLeft(float ftime, float& currentFrame) {
 	
 	currentFrame += 0.005 * ftime; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
 	if (currentFrame > 3) currentFrame -= 3; // если пришли к третьему кадру - откидываемся назад.
@@ -28,7 +28,7 @@ void Hero::moveLeft(float ftime, float currentFrame) {
 	/*herosprite.move(-0.4 * ftime, 0);
 	herosprite.setTextureRect(IntRect(0, 96, 96, 96));*/
 }
-void Hero::moveRight(float ftime, float currentFrame) {
+void Hero::moveRight(float ftime, float& currentFrame) {
 	
 	currentFrame += 0.005 * ftime; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
 	if (currentFrame > 3) currentFrame -= 3; //если пришли к третьему кадру - откидываемся назад.
@@ -39,7 +39,7 @@ void Hero::moveRight(float ftime, float currentFrame) {
 	/*herosprite.move(0.4 * ftime, 0);
 	herosprite.setTextureRect(IntRect(0, 192, 96, 96));*/
 }
-void Hero::moveUp(float ftime, float currentFrame) {
+void Hero::moveUp(float ftime, float& currentFrame) {
 	
 	currentFrame += 0.005 * ftime; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
 	if (currentFrame > 3) currentFrame -= 3; // если пришли к третьему кадру - откидываемся назад.
@@ -50,7 +50,7 @@ void Hero::moveUp(float ftime, float currentFrame) {
 	herosprite.setTextureRect(IntRect(0, 288, 96, 96));*/
 }
 
-void Hero::moveDown(float ftime, float currentFrame) {
+void Hero::moveDown(float ftime, float& currentFrame) {
 
 	currentFrame += 0.005 * ftime; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
 	if (currentFrame > 3) currentFrame -= 3; //если пришли к третьему кадру - откидываемся назад.

@@ -10,8 +10,8 @@ private:
 public:
 	Hero() ;
 	sf::Sprite& getSprite() ;
-	void moveLeft(float,float currentFrame);
-	void moveRight(float, float currentFrame);
-	void moveUp(float, float currentFrame);
-	void moveDown(float, float currentFrame);
+	void moveLeft(float,float& currentFrame);
+	void moveRight(float, float& currentFrame);
+	void moveUp(float, float& currentFrame);
+	void moveDown(float, float& currentFrame);
 };
