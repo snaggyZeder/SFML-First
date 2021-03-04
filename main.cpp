@@ -15,7 +15,7 @@ int main()
 
 
 
-	Hero hero1;
+	Hero hero1("hero.png", 250, 250, 96, 96);
 	// Объект, который, собственно, является главным окном приложения
 	RenderWindow window(VideoMode(800, 600), "SFML lesson 1!");
 
@@ -34,20 +34,19 @@ int main()
 
 		if (Keyboard::isKeyPressed(Keyboard::Left )||
 			Keyboard::isKeyPressed( Keyboard::A)) {
-			hero1.moveLeft(time, currentFrame);
+			hero1.moveLeft(time, currentFrame); hero1.update(time);
 		} //координата Y, на которой герой изображен идущим влево равна 96
 		if (Keyboard::isKeyPressed(Keyboard::Right) || 
-			Keyboard::isKeyPressed(Keyboard::D))
-		{
-			hero1.moveRight(time, currentFrame);
+			Keyboard::isKeyPressed(Keyboard::D)){
+			hero1.moveRight(time, currentFrame); hero1.update(time);
 		} //координата Y, на которой герой изображен идущем вправо равна 96+96=192
 		if (Keyboard::isKeyPressed(Keyboard::Up) ||
 			Keyboard::isKeyPressed(Keyboard::W)) {
-			hero1.moveUp(time, currentFrame);
+			hero1.moveUp(time, currentFrame); hero1.update(time);
 		} //координата Y на которой герой изображен идущим вверх равна 288
 		if (Keyboard::isKeyPressed(Keyboard::Down) || 
 			Keyboard::isKeyPressed(Keyboard::S)) {
-			hero1.moveDown(time, currentFrame);
+			hero1.moveDown(time, currentFrame); hero1.update(time);
 		} //координата 0, это верхняя часть изображения с героем, от нее и отталкиваемся ровными квадратиками по 96. 
 
 
